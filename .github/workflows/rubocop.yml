@@ -33,7 +33,7 @@ jobs:
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: true
-      - uses: reviewdog/action-rubocop@v2
+      - uses: reviewdog/action-rubocop@v2.21.0
         if: steps.changed-files.outputs.any_changed == 'true'
         with:
           fail_level: any
